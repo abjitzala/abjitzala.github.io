@@ -3,82 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abhijit Zala - Deferred Shading</title>
-  <meta name="description" content="Abhijit Zala - Software Engineer and Graphics Engineer">
+  <title>Deferred Shading | Abhijit Zala</title>
+  <meta name="description" content="Deferred shading with three G-buffers, supporting up to 2,000 local lights.">
+  <link rel="canonical" href="https://abjitzala.github.io/deferred-shading.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Abhijit Zala">
+  <meta property="og:title" content="Deferred Shading | Abhijit Zala">
+  <meta property="og:description" content="Deferred shading with three G-buffers, supporting up to 2,000 local lights.">
+  <meta property="og:url" content="https://abjitzala.github.io/deferred-shading.html">
+  <meta property="og:image" content="https://abjitzala.github.io/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="">
   <header class="site-header">
     <a class="site-name" href="index.html">Abhijit Zala</a>
     <nav aria-label="Main">
-      <a href="projects.html">Projects</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="Abhijit_Zala_Resume.pdf">Résumé</a>
+      <a href="mailto:abhijeetzala81@gmail.com">Contact</a>
     </nav>
   </header>
   <main id="top" class="project-page">
     <article>
       <h1>Deferred Shading</h1>
-      <p class="tech">C++, Direct3D 11</p>
+      <p class="tech">Independent project | C++, Direct3D 11, ImGui <span class="year">2023</span></p>
       <div class="text">
-      <p>Implemented Deferred Shading with 3 G-Buffers (Position, Normal, and Diffuse). The scene consists of 100 local lights and 1 global light.</p>
-      <p>Full-screen renders of the G-buffers were added for debugging purposes, and the final output is shown with the G-buffers in an ImGui window.</p>
+        <p>Implemented deferred shading with three G-buffers (position, normal and diffuse), supporting up to 2,000 local lights. The scene shown uses 100 local lights and 1 global light.</p>
+        <p>Full-screen views of each G-buffer were added for debugging, and the final output shows the G-buffers in an ImGui window.</p>
       </div>
       <div class="gallery">
-        <figure><img src="images/deferred-shading/01.png" alt="Deferred Shading screenshot 1" loading="lazy"></figure>
-        <figure><img src="images/deferred-shading/02.png" alt="Deferred Shading screenshot 2" loading="lazy"></figure>
-        <figure><img src="images/deferred-shading/03.png" alt="Deferred Shading screenshot 3" loading="lazy"></figure>
-        <figure><img src="images/deferred-shading/04.png" alt="Deferred Shading screenshot 4" loading="lazy"></figure>
-        <figure><img src="images/deferred-shading/05.png" alt="Deferred Shading screenshot 5" loading="lazy"></figure>
+        <figure><img src="img/deferred-shading/01.webp" alt="Final render lit by many local lights" width="1600" height="904" loading="lazy" decoding="async"><figcaption>Final render lit by many local lights</figcaption></figure>
+        <figure><img src="img/deferred-shading/02.webp" alt="G-buffer: diffuse" width="1600" height="903" loading="lazy" decoding="async"><figcaption>G-buffer: diffuse</figcaption></figure>
+        <figure><img src="img/deferred-shading/03.webp" alt="G-buffer: normals" width="1600" height="903" loading="lazy" decoding="async"><figcaption>G-buffer: normals</figcaption></figure>
+        <figure><img src="img/deferred-shading/04.webp" alt="G-buffer: positions" width="1600" height="903" loading="lazy" decoding="async"><figcaption>G-buffer: positions</figcaption></figure>
+        <figure><img src="img/deferred-shading/05.webp" alt="Final output with the G-buffers in an ImGui window" width="1600" height="901" loading="lazy" decoding="async"><figcaption>Final output with the G-buffers in an ImGui window</figcaption></figure>
       </div>
     </article>
-    <section class="more">
-      <h2>You may also like</h2>
+    <section class="more" aria-labelledby="more-title">
+      <h2 id="more-title">More projects</h2>
       <div class="grid">
-      <a class="card" href="minecraft-vibrant-visuals.html">
-        <span class="thumb"><img src="images/minecraft-vibrant-visuals.png" alt="Minecraft: Vibrant Visuals" loading="lazy"></span>
-        <span class="caption">Minecraft: Vibrant Visuals <span class="year">2025</span></span>
-      </a>
-      <a class="card" href="pbr-ibl-ambient-occlusion.html">
-        <span class="thumb"><img src="images/pbr-ibl-ambient-occlusion.png" alt="PBR, Image-based lighting and Ambient Occlusion" loading="lazy"></span>
-        <span class="caption">PBR, Image-based lighting and Ambient Occlusion <span class="year">2023</span></span>
-      </a>
-      <a class="card" href="moment-shadow-mapping.html">
-        <span class="thumb"><img src="images/moment-shadow-mapping.png" alt="Moment Shadow Mapping" loading="lazy"></span>
-        <span class="caption">Moment Shadow Mapping <span class="year">2023</span></span>
-      </a>
-      <a class="card" href="honeydoom.html">
-        <span class="thumb"><img src="images/honeydoom.png" alt="HoneyDoom" loading="lazy"></span>
-        <span class="caption">HoneyDoom <span class="year">2023</span></span>
-      </a>
-      <a class="card" href="inverse-kinematics.html">
-        <span class="thumb"><img src="images/inverse-kinematics.png" alt="Inverse Kinematics" loading="lazy"></span>
-        <span class="caption">Inverse Kinematics <span class="year">2022</span></span>
-      </a>
       <a class="card" href="real-time-ray-tracing-vulkan.html">
-        <span class="thumb"><img src="images/real-time-ray-tracing-vulkan.png" alt="Real-time ray tracing (Vulkan)" loading="lazy"></span>
-        <span class="caption">Real-time ray tracing (Vulkan) <span class="year">2022</span></span>
-      </a>
-      <a class="card" href="skeleton-animation-path-following.html">
-        <span class="thumb"><img src="images/skeleton-animation-path-following.png" alt="Skeleton Animation &amp; Path following" loading="lazy"></span>
-        <span class="caption">Skeleton Animation &amp; Path following <span class="year">2022</span></span>
-      </a>
-      <a class="card" href="cloth-simulation.html">
-        <span class="thumb"><img src="images/cloth-simulation.png" alt="Cloth Simulation" loading="lazy"></span>
-        <span class="caption">Cloth Simulation <span class="year">2022</span></span>
-      </a>
-      <a class="card" href="pathfinding.html">
-        <span class="thumb"><img src="images/pathfinding.png" alt="Pathfinding" loading="lazy"></span>
-        <span class="caption">Pathfinding <span class="year">2022</span></span>
+        <span class="thumb"><img src="img/thumbs/real-time-ray-tracing-vulkan.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></span>
+        <span class="card-text">
+          <span class="caption">Real-Time Ray Tracing (Vulkan) <span class="year">2022</span></span>
+        </span>
       </a>
       <a class="card" href="bmgwcisiazif-2d-zombie-shooter.html">
-        <span class="thumb"><img src="images/bmgwcisiazif-2d-zombie-shooter.png" alt="BMGWCISIAZIF (2D Zombie Survival)" loading="lazy"></span>
-        <span class="caption">BMGWCISIAZIF (2D Zombie Survival) <span class="year">2022</span></span>
+        <span class="thumb"><img src="img/thumbs/bmgwcisiazif-2d-zombie-shooter.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></span>
+        <span class="card-text">
+          <span class="caption">Bike Mechanic Gone Wrong (2D Zombie Survival) <span class="year">2022</span></span>
+        </span>
+      </a>
+      <a class="card" href="inverse-kinematics.html">
+        <span class="thumb"><img src="img/thumbs/inverse-kinematics.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></span>
+        <span class="card-text">
+          <span class="caption">Inverse Kinematics <span class="year">2022</span></span>
+        </span>
       </a>
       </div>
-      <p class="back"><a href="projects.html">&larr; All projects</a></p>
+      <p class="back"><a href="index.html#projects">&larr; All projects</a></p>
     </section>
   </main>
   <footer class="site-footer">
-    <a href="#top">&uarr; Back to Top</a>
+    <span>&copy; 2026 Abhijit Zala</span>
+    <a href="#top">&uarr; Back to top</a>
   </footer>
 </body>
 </html>

@@ -3,80 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abhijit Zala - Skeleton Animation &amp; Path following</title>
-  <meta name="description" content="Abhijit Zala - Software Engineer and Graphics Engineer">
+  <title>Skeletal Animation &amp; Path Following | Abhijit Zala</title>
+  <meta name="description" content="Skeletal animation and skinning with constant-speed path following along a curve.">
+  <link rel="canonical" href="https://abjitzala.github.io/skeleton-animation-path-following.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Abhijit Zala">
+  <meta property="og:title" content="Skeletal Animation &amp; Path Following | Abhijit Zala">
+  <meta property="og:description" content="Skeletal animation and skinning with constant-speed path following along a curve.">
+  <meta property="og:url" content="https://abjitzala.github.io/skeleton-animation-path-following.html">
+  <meta property="og:image" content="https://abjitzala.github.io/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="">
   <header class="site-header">
     <a class="site-name" href="index.html">Abhijit Zala</a>
     <nav aria-label="Main">
-      <a href="projects.html">Projects</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="Abhijit_Zala_Resume.pdf">Résumé</a>
+      <a href="mailto:abhijeetzala81@gmail.com">Contact</a>
     </nav>
   </header>
   <main id="top" class="project-page">
     <article>
-      <h1>Skeleton Animation &amp; Path following</h1>
-      <p class="tech">C++, Direct3D 11</p>
-      <div class="gallery hero-video">
-        <figure class="embed"><iframe src="https://www.youtube-nocookie.com/embed/lMXpr1VzCWc" title="Skeleton Animation &amp; Path following video 1" loading="lazy" allowfullscreen></iframe></figure>
-      </div>
+      <h1>Skeletal Animation &amp; Path Following</h1>
+      <p class="tech">Independent project | C++, Direct3D 11 <span class="year">2022</span></p>
+      <div class="hero-video"><figure class="embed"><iframe src="https://www.youtube-nocookie.com/embed/lMXpr1VzCWc" title="Skeletal Animation &amp; Path Following video" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></figure></div>
       <div class="text">
-      <p>An animated model walks along the curved path at a constant speed and appropriate orientation.</p>
-      <p>Ease-in/ease-out distance-time function is used for path following and animation (at the beginning and the end).</p>
-      <p class="source">Source code: <a href="https://github.com/abjitzala/CS560">https://github.com/abjitzala/CS560</a></p>
-      <p class="source">Demo video: <a href="https://youtu.be/lMXpr1VzCWc">https://youtu.be/lMXpr1VzCWc</a></p>
+        <p>Implemented skeletal animation and skinning (up to 96 bones). An animated model walks along a curved path at a constant speed and with the correct orientation.</p>
+        <p>An ease-in/ease-out distance-time function is used for path following and animation at the beginning and end of the path.</p>
       </div>
+      <p class="links"><a class="btn" href="https://www.youtube.com/watch?v=lMXpr1VzCWc">Watch the demo on YouTube</a> <a class="btn" href="https://github.com/abjitzala/CS560">View source on GitHub</a></p>
     </article>
-    <section class="more">
-      <h2>You may also like</h2>
+    <section class="more" aria-labelledby="more-title">
+      <h2 id="more-title">More projects</h2>
       <div class="grid">
-      <a class="card" href="minecraft-vibrant-visuals.html">
-        <span class="thumb"><img src="images/minecraft-vibrant-visuals.png" alt="Minecraft: Vibrant Visuals" loading="lazy"></span>
-        <span class="caption">Minecraft: Vibrant Visuals <span class="year">2025</span></span>
-      </a>
-      <a class="card" href="pbr-ibl-ambient-occlusion.html">
-        <span class="thumb"><img src="images/pbr-ibl-ambient-occlusion.png" alt="PBR, Image-based lighting and Ambient Occlusion" loading="lazy"></span>
-        <span class="caption">PBR, Image-based lighting and Ambient Occlusion <span class="year">2023</span></span>
-      </a>
-      <a class="card" href="moment-shadow-mapping.html">
-        <span class="thumb"><img src="images/moment-shadow-mapping.png" alt="Moment Shadow Mapping" loading="lazy"></span>
-        <span class="caption">Moment Shadow Mapping <span class="year">2023</span></span>
-      </a>
-      <a class="card" href="deferred-shading.html">
-        <span class="thumb"><img src="images/deferred-shading.png" alt="Deferred Shading" loading="lazy"></span>
-        <span class="caption">Deferred Shading <span class="year">2023</span></span>
-      </a>
-      <a class="card" href="honeydoom.html">
-        <span class="thumb"><img src="images/honeydoom.png" alt="HoneyDoom" loading="lazy"></span>
-        <span class="caption">HoneyDoom <span class="year">2023</span></span>
-      </a>
-      <a class="card" href="inverse-kinematics.html">
-        <span class="thumb"><img src="images/inverse-kinematics.png" alt="Inverse Kinematics" loading="lazy"></span>
-        <span class="caption">Inverse Kinematics <span class="year">2022</span></span>
-      </a>
-      <a class="card" href="real-time-ray-tracing-vulkan.html">
-        <span class="thumb"><img src="images/real-time-ray-tracing-vulkan.png" alt="Real-time ray tracing (Vulkan)" loading="lazy"></span>
-        <span class="caption">Real-time ray tracing (Vulkan) <span class="year">2022</span></span>
-      </a>
       <a class="card" href="cloth-simulation.html">
-        <span class="thumb"><img src="images/cloth-simulation.png" alt="Cloth Simulation" loading="lazy"></span>
-        <span class="caption">Cloth Simulation <span class="year">2022</span></span>
+        <span class="thumb"><img src="img/thumbs/cloth-simulation.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></span>
+        <span class="card-text">
+          <span class="caption">Cloth Simulation <span class="year">2022</span></span>
+        </span>
       </a>
       <a class="card" href="pathfinding.html">
-        <span class="thumb"><img src="images/pathfinding.png" alt="Pathfinding" loading="lazy"></span>
-        <span class="caption">Pathfinding <span class="year">2022</span></span>
+        <span class="thumb"><img src="img/thumbs/pathfinding.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></span>
+        <span class="card-text">
+          <span class="caption">Pathfinding <span class="year">2022</span></span>
+        </span>
       </a>
-      <a class="card" href="bmgwcisiazif-2d-zombie-shooter.html">
-        <span class="thumb"><img src="images/bmgwcisiazif-2d-zombie-shooter.png" alt="BMGWCISIAZIF (2D Zombie Survival)" loading="lazy"></span>
-        <span class="caption">BMGWCISIAZIF (2D Zombie Survival) <span class="year">2022</span></span>
+      <a class="card" href="minecraft-vibrant-visuals.html">
+        <span class="thumb"><img src="img/thumbs/minecraft-vibrant-visuals.webp" alt="" width="480" height="270" loading="lazy" decoding="async"></span>
+        <span class="card-text">
+          <span class="caption">Minecraft: Vibrant Visuals <span class="year">2025</span></span>
+        </span>
       </a>
       </div>
-      <p class="back"><a href="projects.html">&larr; All projects</a></p>
+      <p class="back"><a href="index.html#projects">&larr; All projects</a></p>
     </section>
   </main>
   <footer class="site-footer">
-    <a href="#top">&uarr; Back to Top</a>
+    <span>&copy; 2026 Abhijit Zala</span>
+    <a href="#top">&uarr; Back to top</a>
   </footer>
 </body>
 </html>

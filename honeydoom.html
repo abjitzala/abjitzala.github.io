@@ -3,94 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abhijit Zala - HoneyDoom</title>
-  <meta name="description" content="Abhijit Zala - Software Engineer and Graphics Engineer">
+  <title>HoneyDoom | Abhijit Zala</title>
+  <meta name="description" content="A custom 3D component-based game engine and dungeon game built with C++, Direct3D 11 and ImGui.">
+  <link rel="canonical" href="https://abjitzala.github.io/honeydoom.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Abhijit Zala">
+  <meta property="og:title" content="HoneyDoom | Abhijit Zala">
+  <meta property="og:description" content="A custom 3D component-based game engine and dungeon game built with C++, Direct3D 11 and ImGui.">
+  <meta property="og:url" content="https://abjitzala.github.io/honeydoom.html">
+  <meta property="og:image" content="https://abjitzala.github.io/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="">
   <header class="site-header">
     <a class="site-name" href="index.html">Abhijit Zala</a>
     <nav aria-label="Main">
-      <a href="projects.html">Projects</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="Abhijit_Zala_Resume.pdf">Résumé</a>
+      <a href="mailto:abhijeetzala81@gmail.com">Contact</a>
     </nav>
   </header>
   <main id="top" class="project-page">
     <article>
       <h1>HoneyDoom</h1>
-      <p class="tech">Lead Graphics Programmer | C++, Direct3D 11 | Team size: 5</p>
+      <p class="tech">Lead Graphics Programmer | C++, Direct3D 11, ImGui | Team of 5 <span class="year">2023</span></p>
       <div class="text">
-      <p>Play as a honeydew exploring a dungeon full of enemy melons, avoiding obstacles, collecting items, and reaching the end.</p>
-      <h2>Responsibilities</h2>
-      <ul>
-        <li>Architected and built the 3D graphics engine from scratch.</li>
-        <li>Implemented toon shading, deferred shading, shadow mapping, and background fade.</li>
-        <li>Incorporated sky-sphere using cube mapping technique and added debug drawing for colliders.</li>
-        <li>Created a GPU-based particle system using geometry shader that supports a large number of particles.</li>
-        <li>Extended the level editor with Gizmos for seamless level editing (drag and drop game objects).</li>
-      </ul>
-      <h2>Level Editor</h2>
-      <ul>
-        <li>Integrated Gizmos API.</li>
-        <li>Added text rendering to visualize each game object name in the scene.</li>
-        <li>Implemented click-to-select a game object in the scene (ray casting/picking) for selecting game objects using Gizmos.</li>
-      </ul>
+        <p>A custom 3D component-based game engine built with C++, Direct3D 11 and ImGui. Play as a honeydew exploring a dungeon full of enemy melons, avoiding obstacles, collecting items, and reaching the end.</p>
+        <h2>Responsibilities</h2>
+        <ul>
+          <li>Architected and built the 3D graphics engine from scratch.</li>
+          <li>Implemented toon shading, deferred shading, shadow mapping, and background fade.</li>
+          <li>Incorporated a sky-sphere using cube mapping and added debug drawing for colliders.</li>
+          <li>Created a GPU-based particle system using a geometry shader that supports a large number of particles.</li>
+        </ul>
+        <h2>Level editor</h2>
+        <ul>
+          <li>Integrated the Gizmos API for drag-and-drop level editing.</li>
+          <li>Added text rendering to show each game object&#x27;s name in the scene.</li>
+          <li>Implemented click-to-select for game objects using ray casting (picking).</li>
+        </ul>
       </div>
       <div class="gallery">
-        <figure><img src="images/honeydoom/01.png" alt="HoneyDoom screenshot 1" loading="lazy"></figure>
-        <figure><img src="images/honeydoom/02.png" alt="HoneyDoom screenshot 2" loading="lazy"></figure>
-        <figure><img src="images/honeydoom/03.png" alt="HoneyDoom screenshot 3" loading="lazy"></figure>
-        <figure><img src="images/honeydoom/04.png" alt="HoneyDoom screenshot 4" loading="lazy"></figure>
+        <figure><img src="img/honeydoom/01.webp" alt="In-game view of the dungeon with the honeydew player character" width="1600" height="833" loading="lazy" decoding="async"><figcaption>In-game view of the dungeon with the honeydew player character</figcaption></figure>
+        <figure><img src="img/honeydoom/02.webp" alt="Level editor: moving a pillar with the translate gizmo" width="1600" height="833" loading="lazy" decoding="async"><figcaption>Level editor: moving a pillar with the translate gizmo</figcaption></figure>
+        <figure><img src="img/honeydoom/03.webp" alt="Level editor: game object names rendered in the scene" width="1600" height="833" loading="lazy" decoding="async"><figcaption>Level editor: game object names rendered in the scene</figcaption></figure>
+        <figure><img src="img/honeydoom/04.webp" alt="Level editor: collider debug drawing" width="1600" height="833" loading="lazy" decoding="async"><figcaption>Level editor: collider debug drawing</figcaption></figure>
       </div>
     </article>
-    <section class="more">
-      <h2>You may also like</h2>
+    <section class="more" aria-labelledby="more-title">
+      <h2 id="more-title">More projects</h2>
       <div class="grid">
-      <a class="card" href="minecraft-vibrant-visuals.html">
-        <span class="thumb"><img src="images/minecraft-vibrant-visuals.png" alt="Minecraft: Vibrant Visuals" loading="lazy"></span>
-        <span class="caption">Minecraft: Vibrant Visuals <span class="year">2025</span></span>
-      </a>
       <a class="card" href="pbr-ibl-ambient-occlusion.html">
-        <span class="thumb"><img src="images/pbr-ibl-ambient-occlusion.png" alt="PBR, Image-based lighting and Ambient Occlusion" loading="lazy"></span>
-        <span class="caption">PBR, Image-based lighting and Ambient Occlusion <span class="year">2023</span></span>
+        <span class="thumb"><img src="img/thumbs/pbr-ibl-ambient-occlusion.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></span>
+        <span class="card-text">
+          <span class="caption">PBR, Image-Based Lighting and Ambient Occlusion <span class="year">2023</span></span>
+        </span>
       </a>
       <a class="card" href="moment-shadow-mapping.html">
-        <span class="thumb"><img src="images/moment-shadow-mapping.png" alt="Moment Shadow Mapping" loading="lazy"></span>
-        <span class="caption">Moment Shadow Mapping <span class="year">2023</span></span>
+        <span class="thumb"><img src="img/thumbs/moment-shadow-mapping.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></span>
+        <span class="card-text">
+          <span class="caption">Moment Shadow Mapping <span class="year">2023</span></span>
+        </span>
       </a>
       <a class="card" href="deferred-shading.html">
-        <span class="thumb"><img src="images/deferred-shading.png" alt="Deferred Shading" loading="lazy"></span>
-        <span class="caption">Deferred Shading <span class="year">2023</span></span>
-      </a>
-      <a class="card" href="inverse-kinematics.html">
-        <span class="thumb"><img src="images/inverse-kinematics.png" alt="Inverse Kinematics" loading="lazy"></span>
-        <span class="caption">Inverse Kinematics <span class="year">2022</span></span>
-      </a>
-      <a class="card" href="real-time-ray-tracing-vulkan.html">
-        <span class="thumb"><img src="images/real-time-ray-tracing-vulkan.png" alt="Real-time ray tracing (Vulkan)" loading="lazy"></span>
-        <span class="caption">Real-time ray tracing (Vulkan) <span class="year">2022</span></span>
-      </a>
-      <a class="card" href="skeleton-animation-path-following.html">
-        <span class="thumb"><img src="images/skeleton-animation-path-following.png" alt="Skeleton Animation &amp; Path following" loading="lazy"></span>
-        <span class="caption">Skeleton Animation &amp; Path following <span class="year">2022</span></span>
-      </a>
-      <a class="card" href="cloth-simulation.html">
-        <span class="thumb"><img src="images/cloth-simulation.png" alt="Cloth Simulation" loading="lazy"></span>
-        <span class="caption">Cloth Simulation <span class="year">2022</span></span>
-      </a>
-      <a class="card" href="pathfinding.html">
-        <span class="thumb"><img src="images/pathfinding.png" alt="Pathfinding" loading="lazy"></span>
-        <span class="caption">Pathfinding <span class="year">2022</span></span>
-      </a>
-      <a class="card" href="bmgwcisiazif-2d-zombie-shooter.html">
-        <span class="thumb"><img src="images/bmgwcisiazif-2d-zombie-shooter.png" alt="BMGWCISIAZIF (2D Zombie Survival)" loading="lazy"></span>
-        <span class="caption">BMGWCISIAZIF (2D Zombie Survival) <span class="year">2022</span></span>
+        <span class="thumb"><img src="img/thumbs/deferred-shading.webp" alt="" width="800" height="600" loading="lazy" decoding="async"></span>
+        <span class="card-text">
+          <span class="caption">Deferred Shading <span class="year">2023</span></span>
+        </span>
       </a>
       </div>
-      <p class="back"><a href="projects.html">&larr; All projects</a></p>
+      <p class="back"><a href="index.html#projects">&larr; All projects</a></p>
     </section>
   </main>
   <footer class="site-footer">
-    <a href="#top">&uarr; Back to Top</a>
+    <span>&copy; 2026 Abhijit Zala</span>
+    <a href="#top">&uarr; Back to top</a>
   </footer>
 </body>
 </html>
